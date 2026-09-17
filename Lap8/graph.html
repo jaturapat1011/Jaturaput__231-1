@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-gph.css">
+    <title>Document</title>
+    <style>
+body {
+  margin: 0;
+  font-family: "Sarabun", sans-serif;
+  background: #F4F1E6;
+  color: #22281F;
+}
+.hero {
+  background: #649fe2;
+  text-align: center;
+  padding: 50px 20px;
+}
+.hero h1 {
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  font-size: 36px;
+  color: #FBF8EF;
+}
+.hero .subtitle {
+  max-width: 600px;
+  margin: 14px auto 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #C9D6CD;
+}
+.container {
+  width: 1024px;
+  max-width: 100%;
+  margin: 40px auto;
+  display: flex;
+  gap: 24px;
+}
+.panel {
+  flex: 1;
+  background: #FFFFFF;
+  border: 1px solid #D9D2BC;
+  border-radius: 6px;
+  padding: 24px;
+}
+.panel h2 {
+  margin: 0 0 20px;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  color: #2F6F5E;
+  border-bottom: 2px solid #E4EDE7;
+  padding-bottom: 8px;
+}
+.graph-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.row-label {
+  width: 120px;
+  text-align: right;
+  font-size: 14px;
+}
+.bar-h {
+  height: 32px;
+  background: #ed921b;
+  color: #4A3A05;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  font-size: 13px;
+}
+.graph-vertical {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 320px;
+  border-bottom: 2px solid #E4EDE7;
+}
+.col {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.bar-v {
+  width: 46px;
+  background: #046a0d90;
+  color: #F2F8F5;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 6px;
+  font-size: 12px;
+}
+.col-label {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 24px 20px 36px;
+  font-size: 13px;
+  color: #5B6459;
+}
+    </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>การเข้าเล่นร้านเกม</h1>
+    <p class="subtitle">ผลสำรวจจากผู้คนจำนวน 30 คน เกี่ยวกับพื้นที่ใช้บริการภายในบริเวณร้าน</p>
+  </header>
+  <div class="container">
+    <section class="panel">
+      <h2>แนวนอน</h2>
+      <div class="graph-horizontal">
+        <div class="row">
+          <div class="row-label">เด็กประถม</div>
+          <div class="bar-h" style="width: 110px;">10%</div>
+        </div>
+        <div class="row">
+          <div class="row-label">เด็กมัธยม</div>
+          <div class="bar-h" style="width: 235px;">23.33%</div>
+        </div>
+        <div class="row">
+          <div class="row-label">เด็กมหาลัย</div>
+          <div class="bar-h" style="width: 175px;">16.67%</div>
+        </div>
+        <div class="row">
+          <div class="row-label">วัยรุ่น</div>
+          <div class="bar-h" style="width: 280px;">36.67%</div>
+        </div>
+        <div class="row">
+          <div class="row-label">วัยผู้ใหญ่</div>
+          <div class="bar-h" style="width: 140px;">13.33%</div>
+        </div>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>แนวตั้ง</h2>
+      <div class="graph-vertical">
+        <div class="col">
+          <div class="bar-v" style="height: 110px;">10%</div>
+          <div class="col-label">เด็กประถม</div>
+        </div>
+        <div class="col">
+          <div class="bar-v" style="height: 235px;">23.33%</div>
+          <div class="col-label">เด็กมัธยม</div>
+        </div>
+        <div class="col">
+          <div class="bar-v" style="height: 175px;">16.67%</div>
+          <div class="col-label">เด็กมหาลัย</div>
+        </div>
+        <div class="col">
+          <div class="bar-v" style="height: 280px;">36.67%</div>
+          <div class="col-label">วัยรุ่น</div>
+        </div>
+        <div class="col">
+          <div class="bar-v" style="height: 140px;">13.33%</div>
+          <div class="col-label">วัยผู้ใหญ่</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>สงวนลิขสิทธิ์ 2569 โดย 056950405231-1 นายจตุรภัทร เสือศรี CPE-RMUTP 2569</p>
+  </footer>
+</body>
+</html>
